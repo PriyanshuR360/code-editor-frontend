@@ -10,7 +10,7 @@ function App() {
 
   const runCode = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/run', {
+      const response = await axios.post('https://code-editor-backend-w19r.onrender.com/run', {
         code: code,
         input: input,
         language: 'python'
